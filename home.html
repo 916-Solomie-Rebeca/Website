@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Artis Restaurant</title>
+</head>
+<body>
+    <header>
+        <!-- Menu Icon -->
+        <div class="menu-icon" onclick="toggleMenu()">
+            &#9776; <!-- This is the hamburger icon (Unicode Character) -->
+        </div>
+        
+        <!-- Menu that is hidden initially -->
+        <nav id="menu" class="menu hidden">
+            <ul>
+                <li><a href="#">Locations</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Menu</a></li>
+            </ul>
+        </nav>
+
+        <!-- Logo -->
+        <img src="artis_logo.jpeg" alt="Artis Restaurant Header" class="header-image">
+    </header>
+
+    <main>
+        <!-- Section 1: Restaurant Concept -->
+        <section class="content-section">
+            <div class="content-text">
+                <h2>Artis Concept</h2>
+                <p>At Artis Restaurant, we believe in blending tradition with modern flavors. Our concept revolves around offering a unique dining experience that balances innovation with time-honored recipes.</p>
+            </div>
+            <div class="content-image">
+                <img src="restaurant1.jpg" alt="Artis Restaurant" class="image-with-transition">
+            </div>
+        </section>
+
+        <!-- Section 2: Culinary Experience -->
+        <section class="content-section">
+            <div class="content-image">
+                <img src="restaurant.jpg" alt="Artis Team" class="image-with-transition">
+            </div>
+            <div class="content-text">
+                <h2>Dining Experience</h2>
+                <p>Our talented team is dedicated to providing the best dining experience. From our chefs to our wait staff, each member of the Artis family brings passion and dedication to the table.</p>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
